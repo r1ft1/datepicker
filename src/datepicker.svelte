@@ -949,14 +949,14 @@
         <div class="timepicker" class:show={isRange && !isMultipane}>
           <input type="time" bind:value={startDateTime} on:input={() => (startDate = updateTime('start', startDate))} />
 
-          {#if isRange}
+          <-- {#if isRange} -->
             <input
               type="time"
               class="end-time"
               bind:value={endDateTime}
               on:input={() => (endDate = updateTime('end', endDate))}
             />
-          {/if}
+          <-- {/if} -->
         </div>
       {/if}
 
